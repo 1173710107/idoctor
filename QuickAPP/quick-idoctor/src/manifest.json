@@ -1,0 +1,60 @@
+{
+  "package": "com.application.demo",
+  "name": "iDoctor",
+  "versionName": "1.0.0",
+  "versionCode": "1",
+  "minPlatformVersion": "1020",
+  "icon": "/Common/logo.png",
+  "features": [
+    { "name": "system.prompt" },
+    { "name": "system.webview" },
+    { "name": "system.router" },
+    { "name": "system.shortcut" }
+  ],
+  "permissions": [
+    { "origin": "*" }
+  ],
+  "config": {
+    "logLevel": "log"
+  },
+  "router": {
+    "entry": "Index",
+    "pages": {
+      "Index": {
+        "component": "index"
+      },
+      "DemoDetail": {
+        "component": "index"
+      },
+      "About": {
+        "component": "index"
+      }
+    },
+    "widgets": {
+      "CardDemo": {
+        "name": "CardDemo",
+        "description": "快应用卡片展示",
+        "component": "index",
+        "path": "/CardDemo",
+        "features": []
+      }
+    }
+  },
+  "display": {
+    "titleBar": false,
+    "titleBarBackgroundColor": "rgb(70, 161, 253)",
+    "titleBarTextColor": "rgb(70, 161, 253)",
+    "pages": {
+      "Index": {
+        "titleBarText": "首页",
+        "menu": false
+      },
+      "DemoDetail": {
+        "titleBarText": "详情页"
+      },
+      "About": {
+        "menu": false
+      }
+    }
+  }
+}
